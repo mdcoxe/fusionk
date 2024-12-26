@@ -1,4 +1,5 @@
 <script>
+	import Menu from './Menu.svelte';
 	const navItems = [
 		{ label: 'Events', path: '/events' },
 		{ label: 'Menu', path: '/foodtruck' },
@@ -6,17 +7,20 @@
 		{ label: 'About', path: '/about' },
 		{ label: 'Contact', path: '/contact' }
 	];
+
 	let props = $props();
+	let isMenuOpen = $state(false);
 </script>
 
-<!-- <header class="font-sofia fixed left-0 right-0 top-0 z-50 bg-[#162C4F] shadow-md"> -->
-	<header class="font-sofia fixed left-0 right-0 top-0 z-50 bg-white shadow-md text-[#162C4F]">
-
+<header class="font-sofia fixed left-0 right-0 top-0 z-50 bg-white shadow-md text-[#162C4F]">
 	<div class="container mx-auto px-2">
 		<nav class="flex h-16 items-center justify-between">
-			<button class="lg:hidden order-1 text-[#162C4F] text-3xl">
+
+			<!-- Hamburger Menu -->
+			<button class="lg:hidden order-1 text-[#162C4F] text-3xl" onclick={() => isMenuOpen = true}>
 				☰
 			</button>
+
 			<!-- Logo -->
 			<a href="/" class="title text-3xl font-bold order-2 lg:order-1">FUSION KITCHEN, LLC</a>
 
@@ -39,3 +43,5 @@
 		</nav>
 	</div>
 </header>
+
+<Menu bind:isOpen={isMenuOpen} />

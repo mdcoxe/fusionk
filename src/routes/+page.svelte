@@ -11,9 +11,9 @@
 	</div>
 </div>
 
-	<ButtonBar />
-	<TextBlock />
-	<PictureBar />
+<ButtonBar />
+<TextBlock />
+<PictureBar />
 
 
 
