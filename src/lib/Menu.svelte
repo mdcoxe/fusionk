@@ -1,11 +1,26 @@
 <script>
     import { fade } from 'svelte/transition';
-    
+    import { onMount } from 'svelte';
+
     export let isOpen = false;
-    
+    let showLogo = false;
+
     function closeMenu() {
         isOpen = false;
     }
+
+    onMount(() => {
+        const updateLogoVisibility = () => {
+            showLogo = window.innerHeight >= 720;
+        };
+        
+        window.addEventListener('resize', updateLogoVisibility);
+        updateLogoVisibility(); 
+        
+        return () => {
+            window.removeEventListener('resize', updateLogoVisibility);
+        };
+    });
 </script>
   
 {#if isOpen}
@@ -14,13 +29,13 @@
       transition:fade
     >
       <button 
-        class="absolute top-5 right-5 text-3xl text-white hover:text-yellow-400 transition-colors"
+        class="absolute top-5 right-5 text-4xl text-white hover:text-yellow-400 transition-colors"
         onclick={closeMenu}
       >
         ×
       </button>
       
-      <nav class="flex flex-col items-center justify-center h-full gap-8">
+      <nav class="flex flex-col items-center mt-[200px] h-full gap-8">
         <a 
           href="/" 
           class="text-white text-2xl hover:text-yellow-400 transition-colors"
@@ -50,7 +65,7 @@
           Contact
         </a>
         
-        <div class="flex flex-col gap-4 mt-8">
+        <div class="flex flex-col gap-4 mt-4">
           <a 
             href="https://www.facebook.com/profile.php?id=61567864636675" 
             class="flex items-center gap-2 text-white hover:text-yellow-400 transition-colors"
@@ -77,7 +92,7 @@
       <img 
         src="./logo.png" 
         alt="Fusion Kitchen Logo" 
-        class="absolute bottom-8 w-40 h-auto"
-      />
+        class="absolute bottom-8 w-40 h-auto {showLogo ? 'block' : 'hidden'}"
+        />
     </div>
 {/if}
