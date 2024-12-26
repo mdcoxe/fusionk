@@ -14,7 +14,7 @@
 
 	<div class="container mx-auto px-2">
 		<nav class="flex h-16 items-center justify-between">
-			<button class="lg:hidden order-1 text-white text-3xl">
+			<button class="lg:hidden order-1 text-[#162C4F] text-3xl">
 				☰
 			</button>
 			<!-- Logo -->

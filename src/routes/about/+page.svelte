@@ -1,21 +1,21 @@
 <script>
-    const imagePath = "./family.jpg"; // Replace with your actual image path
+    const imagePath = "./family.jpg"; 
 </script>
 
-<div class="container mt-[100px] mb-[25px] mx-auto ppx-8 lg:px-16 py-12 rounded-lg bg-[#162C4F]">
+<div class="container mx-auto px-4 sm:px-8 lg:px-16 py-12 mt-[100px] mb-[25px] rounded-lg bg-[#162C4F]">
     <div class="flex flex-col md:flex-row gap-8">
         <!-- Image for md and below - shows at top -->
         <div class="md:hidden h-[100%] mx-auto">
             <img 
                 src={imagePath} 
-                alt="Chef Mike Trudnak" 
+                alt="The Trudnak Family" 
                 class="w-full h-[300px] object-cover rounded-lg"
             />
         </div>
 
         <!-- Text Content -->
-        <div class="flex-1 text-white space-y-8">
-            <h1 class="text-3xl font-bold">About</h1>
+        <div class="flex-1 text-white space-y-8 mx-[5px]">
+            <h1 class="text-3xl font-bold">About Us</h1>
             
             <p>
                 At Fusion Kitchen LLC, we bring over 20 years of passion and expertise in culinary arts and hospitality straight to your plate. As a family-owned and operated business, we proudly serve Central Florida with top-notch catering, mobile kitchen, and food truck services. Whether it's an intimate gathering or a large celebration, we're here to make your dining experience unforgettable.
@@ -38,7 +38,7 @@
             </p>
 
             <p class="text-[#9D7D59] font-bold">
-                Follow us at @fusionkitchen to see where we'll be next!
+                Follow us at @fusionkitchentruck to see where we'll be next!
             </p>
         </div>
 
@@ -46,8 +46,8 @@
         <div class="hidden md:block w-1/3">
             <img 
                 src={imagePath} 
-                alt="Chef Mike Trudnak" 
-                class="w-full h-full object-cover rounded-3xl sticky top-20"
+                alt="The Trudnak Family" 
+                class="w-full  object-cover rounded-3xl sticky top-20"
             />
         </div>
     </div>
