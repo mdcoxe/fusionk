@@ -38,7 +38,8 @@
             </p>
 
             <p class="text-[#9D7D59] font-bold">
-                Follow us at @fusionkitchentruck to see where we'll be next!
+                Follow us at <a 
+                href="https://instagram.com/fusionkitchentruck">@fusionkitchentruck</a> to see where we'll be next!
             </p>
         </div>
 

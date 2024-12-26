@@ -35,7 +35,7 @@
         ×
       </button>
       
-      <nav class="flex flex-col items-center mt-[200px] h-full gap-8">
+      <nav class="flex flex-col items-center mt-[100px] h-full gap-4">
         <a 
           href="/" 
           class="text-white text-2xl hover:text-yellow-400 transition-colors"
@@ -49,6 +49,20 @@
           onclick={closeMenu}
         >
           Our Menu
+        </a>
+        <a 
+        href="/events" 
+        class="text-white text-2xl hover:text-yellow-400 transition-colors"
+        onclick={closeMenu}
+        >
+            Events
+        </a>
+        <a 
+        href="/catering" 
+        class="text-white text-2xl hover:text-yellow-400 transition-colors"
+        onclick={closeMenu}
+        >
+            Catering
         </a>
         <a 
           href="/about" 

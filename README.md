@@ -9,6 +9,5 @@ Todo:
 Make menu.png not hardcoded
 Build events page
 Build picture wheel/carosel/wall based off social media images
-Build contact us form
 Build Catering page
 
