@@ -9,8 +9,8 @@
 </script>
 
 <footer class="mt-auto bg-[#162C4F] py-8 text-white">
-	<div class="container mx-auto px-4">
-		<div class="grid grid-cols-[100px_1fr] items-center gap-8 md:grid-cols-3">
+	<div class="container mx-auto px-2">
+		<div class="grid grid-cols-[80px_1fr] items-center gap-4 md:grid-cols-3">
 			<!-- Logo -->
 			<div class="flex items-center justify-start">
 				<img
@@ -19,7 +19,7 @@
 					class="h-[125px] w-[125px] object-contain md:h-[200px] md:w-[200px]"
 				/>
             </div>
-            
+
 			<!-- Right side content container -->
 			<div class="space-y-8 text-right md:text-center">
 				<!-- Quick Links -->
