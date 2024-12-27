@@ -25,9 +25,9 @@
 			<a href="/" class="title text-3xl font-bold order-2 lg:order-1">FUSION KITCHEN, LLC</a>
 
 			<!-- Navigation Links -->
-			<div class="hidden lg:flex justify-center space-x-6 order-2">
+			<div class="text-3xl hidden lg:flex justify-center space-x-6 order-2">
 				{#each navItems as { label, path }}
-					<a href={path} class="text-2xl  transition-colors hover:text-[#9D7D59]">
+					<a href={path} class="  transition-colors hover:text-[#9D7D59]">
 						{label}
 					</a>
 				{/each}

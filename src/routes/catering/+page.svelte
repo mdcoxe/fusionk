@@ -24,16 +24,6 @@
             src: '/porksammich.jpg',
             alt: 'Catering Image 5',
             description: 'Description for image 5'
-        },
-        {
-            src: '/red.jpg',
-            alt: 'Catering Image 4',
-            description: 'Description for image 4'
-        },
-        {
-            src: '/sammich.jpg',
-            alt: 'Catering Image 5',
-            description: 'Description for image 5'
         }
     ];
 
@@ -79,9 +69,11 @@
             <p class="text-lg mb-4">
                 Ready to discuss your event? Contact us for a custom quote!
             </p>
+            <!-- <a href="/contact" class="w-[350px] transform rounded-lg bg-[#9D7D59] px-6 py-3 text-lg font-bold text-white shadow-md transition hover:scale-105 hover:bg-[#8B6D49] hover:text-[#162C4F] text-center"> -->
+
             <a 
                 href="/contact" 
-                class="inline-block bg-sky-600 text-white py-2 px-6 rounded-lg hover:bg-sky-700 transition-colors"
+                class="inline-block bg-[#162C4F] text-white text-lg font-bold py-2 px-6 rounded-lg hover:bg-[#1d3e72] hover:text-[#8B6D49] transform shadow-md  transition hover:scale-105"
             >
                 Get in Touch
             </a>
