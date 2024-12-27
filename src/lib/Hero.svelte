@@ -11,7 +11,9 @@
 			class="absolute inset-0 w-full h-full 
 			md:h-[700px] 
 			lg:h-[800px] 
-			object-cover"
+			object-cover
+			rounded-lg
+			"
 		/>
 	</div>
 </div>

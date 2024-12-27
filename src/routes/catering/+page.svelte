@@ -34,8 +34,7 @@
     }
 </script>
 
-<div class="container mx-auto px-4 py-8">
-    
+<div class="container mx-auto px-4 py-8 text-[#162C4F]">
     <div class="max-w-4xl mx-auto mt-12">
         <h2 class="text-3xl font-bold mb-4">Our Catering Services</h2>
         <p class="text-lg mb-6">
@@ -80,7 +79,6 @@
         </div>
     </div>
 
-
     <div class="bg-[#162C4F] mt-[75px] p-5 rounded-lg max-w-4xl mx-auto">
     
         <!-- Main Image -->
@@ -115,5 +113,4 @@
             {/each}
         </div>
     </div>
-
 </div>
